@@ -30,13 +30,17 @@ class ItemImage extends BaseBlock {
 
 		$item_image_size = $this->get_block_attribute( 'itemImageSize' );
 
+		$item_image_url = empty( $item_image[ $item_image_size ] )
+			? self::FALLBACK_IMAGE
+			: $item_image[ $item_image_size ];
+
 		$width = empty( $this->get_block_attribute( 'width' ) )
-			? '' :
+			? 64 :
 			intval( $this->get_block_attribute( 'width' ) );
 
 		$image = sprintf(
 			'<img src="%s" width="%s" alt="" />',
-			esc_attr( $item_image[ $item_image_size ] ?? self::FALLBACK_IMAGE ),
+			esc_url( $item_image_url ),
 			esc_attr( $width )
 		);
 
