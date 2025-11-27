@@ -41,10 +41,23 @@ class LastFM {
 			return $cached_data;
 		}
 
-		if ( empty( $params['method'] ) ) {
+		$allowed_methods = array(
+			'artist.getinfo',
+			'album.getinfo',
+			'track.getinfo',
+			'user.gettopalbums',
+			'user.gettopartists',
+			'user.gettoptracks',
+		);
+
+        // Validate the 'method' parameter.
+		if (
+			empty( $params['method'] ) ||
+			! in_array( $params['method'], $allowed_methods, true )
+		) {
 			return new \WP_Error(
-				'missing_method',
-				__( 'API method is required.', 'profile-blocks-lastfm' ),
+                'invalid_method',
+				__( 'Invalid or missing method parameter for Last.fm API request.', 'profile-blocks-lastfm' ),
 				array( 'status' => 400 )
 			);
 		}
