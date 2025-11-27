@@ -1,7 +1,5 @@
 # Profile Blocks for LastFM
 
-⚠️ **Notice**: This project is under active development and not ready for use. Proceed with caution.
-
 ## Requirements
 
 - PHP 7.4+
@@ -40,3 +38,11 @@ Run the development build which will watch for changes:
 ```
 npm run start
 ```
+
+## Screenshots
+
+![Top Artists - Grid Layout](.wordpress-org/screenshot-1.png)
+![Top Albums - Grid Layout](.wordpress-org/screenshot-2.png)
+![Top Artists - List Layout](.wordpress-org/screenshot-3.png)
+![Top Albums - List Layout](.wordpress-org/screenshot-4.png)
+![Top Tracks - List Layout](.wordpress-org/screenshot-5.png)
