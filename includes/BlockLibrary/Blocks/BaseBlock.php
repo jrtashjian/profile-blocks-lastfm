@@ -111,7 +111,7 @@ abstract class BaseBlock implements BlockInterface {
 	 *
 	 * @return mixed           The value found at the specified path, or $fallback if not found.
 	 */
-	public function getByPath( array $items, $path = '', mixed $fallback = null ) {
+	public function getByPath( array $items, $path = '', $fallback = null ) {
 		$keys    = explode( '.', (string) $path );
 		$current = $items;
 
