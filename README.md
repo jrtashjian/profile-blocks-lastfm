@@ -42,7 +42,16 @@ npm run start
 ## Screenshots
 
 ![Top Artists - Grid Layout](.wordpress-org/screenshot-1.png)
+*Top Artists - Grid Layout*
+
 ![Top Albums - Grid Layout](.wordpress-org/screenshot-2.png)
+*Top Albums - Grid Layout*
+
 ![Top Artists - List Layout](.wordpress-org/screenshot-3.png)
+*Top Artists - List Layout*
+
 ![Top Albums - List Layout](.wordpress-org/screenshot-4.png)
+*Top Albums - List Layout*
+
 ![Top Tracks - List Layout](.wordpress-org/screenshot-5.png)
+*Top Tracks - List Layout*
